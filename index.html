@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Foodies</title>  
+	<meta name="description" content="Restaurant chashier system">
+	<meta name="author" content="Mohammed Diary, Lawen Hunar, Zheer Mohammed">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">    
+	<link rel="stylesheet" href="css/style.css">    
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		.login-container {
+			width: 300px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.login-title {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		.form-actions {
+			text-align: center;
+		}
+
+		button {
+			background-color: #729ed0;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="login-container">
+		<h1 class="login-title">Log In</h1>
+		<form>
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input
+					type="text"
+					id="username"
+					placeholder="Zheer"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input
+					type="password"
+					id="password"
+					placeholder="****************"
+				/>
+			</div>
+			<div class="form-actions">
+				<button type="button" onclick="window.location.href='home.html'">Sign In</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
