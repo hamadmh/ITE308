@@ -9,7 +9,8 @@
     <meta name="author" content="Mohammed Diary, Lawen Hunar, Zheer Mohammed">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">    
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">  
+	<link rel="stylesheet" href="css/dark.css">  
 </head>
 
 <body>
@@ -30,6 +31,7 @@
 						<li class="nav-item"><a class="nav-link" href="userprofile.html">User Profile</a></li>
 						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
 					</ul>
+					<button id="toggle-dark-mode">Dark Mode</button>
 				</div>
 			</div>
 		</nav>
@@ -159,5 +161,15 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const body = document.body;
+			const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+
+			toggleDarkModeButton.addEventListener('click', function () {
+				body.classList.toggle('dark-mode');
+			});
+		});
+	</script>
 </body>
 </html>

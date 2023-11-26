@@ -190,6 +190,10 @@ button:focus{
     justify-content: space-around;
 }
 
+.row{
+    margin-top: 10px;
+}
+
 .lab{
     margin-top: 5px;
 }
@@ -263,6 +267,15 @@ tr:nth-child(even) {
 }
 
 /* MENU */
+.searchIso{
+    
+}
+
+.isoGroup{
+    margin: 10px;
+    padding: 5px 10px;
+}
+
 .menu-box{
 	padding: 70px 0px;
 }
@@ -669,3 +682,4 @@ tr:nth-child(even) {
 .hover\:text-burgundy-dark:hover {
     color: #660016;
 }
+

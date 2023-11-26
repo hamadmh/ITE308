@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap.min.css">    
 	<link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/dark.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -30,6 +32,7 @@
 						<li class="nav-item"><a class="nav-link" href="userprofile.html">User Profile</a></li>
 						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
 					</ul>
+					<button id="toggle-dark-mode">Dark Mode</button>
 				</div>
 			</div>
 		</nav>
@@ -47,27 +50,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="special-menu text-center">
-						<div class="button-group filter-button-group">
-							<button class="active" data-filter="*">All</button>
-							<button data-filter=".drinks">Drinks</button>
-							<button data-filter=".lunch">Lunch</button>
-							<button data-filter=".dinner">Dinner</button>
-						</div>
-					</div>
+			<div class="special-menu text-center">
+				<div class="button-group filter-button-group isoGroup">
+					<button class="active" data-filter="*">All</button>
+					<button data-filter=".drinks">Drinks</button>
+					<button data-filter=".lunch">Lunch</button>
+					<button data-filter=".dinner">Dinner</button>
+					<input type="text" class="searchIso search" placeholder="Search...">
 				</div>
 			</div>
+			
 				
 			<div class="row special-list">
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
 						<img src="images/img-01.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $7.79</h5>
+							<h4>Whisky</h4>
+							<h5> 10,000</h5>
 						</div>
 					</div>
 				</div>
@@ -76,9 +76,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-02.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $9.79</h5>
+							<h4>Cherry lemonade</h4>
+							<h5> 10,000</h5>
 						</div>
 					</div>
 				</div>
@@ -87,9 +86,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-03.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $10.79</h5>
+							<h4>Champagne</h4>
+							<h5> 15,000</h5>
 						</div>
 					</div>
 				</div>
@@ -98,9 +96,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-04.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $15.79</h5>
+							<h4>Fried Chicken Burger</h4>
+							<h5> 15,000</h5>
 						</div>
 					</div>
 				</div>
@@ -109,9 +106,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-05.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $18.79</h5>
+							<h4>Salad</h4>
+							<h5> 12,000</h5>
 						</div>
 					</div>
 				</div>
@@ -120,9 +116,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-06.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $20.79</h5>
+							<h4>Salmon</h4>
+							<h5> 25,000</h5>
 						</div>
 					</div>
 				</div>
@@ -131,9 +126,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-07.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $25.79</h5>
+							<h4>Cake</h4>
+							<h5> 5,000</h5>
 						</div>
 					</div>
 				</div>
@@ -142,9 +136,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-08.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $22.79</h5>
+							<h4>Japanese</h4>
+							<h5> 30,000</h5>
 						</div>
 					</div>
 				</div>
@@ -153,9 +146,8 @@
 					<div class="gallery-single fix">
 						<img src="images/img-09.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $24.79</h5>
+							<h4>IDK</h4>
+							<h5> 18,000</h5>
 						</div>
 					</div>
 				</div>
@@ -220,5 +212,15 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const body = document.body;
+			const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+
+			toggleDarkModeButton.addEventListener('click', function () {
+				body.classList.toggle('dark-mode');
+			});
+		});
+	</script>
 </body>
 </html>
