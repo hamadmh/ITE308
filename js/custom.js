@@ -58,12 +58,4 @@
             });
         });
     });
-
-    baguetteBox.run('.tz-gallery', {
-        animation: 'fadeIn',
-        noScrollbars: true
-    });
-
-    $('.datepicker').pickadate();
-    $('.time').pickatime();    
 }(jQuery));
