@@ -119,7 +119,7 @@ button:focus{
 .top-navbar .navbar-light .navbar-nav .nav-link{
 	color: #010101;
 	font-size: 18px;
-	padding: 0px 20px;
+	padding: 0px 10px;
 	border-radius: 4px;
 }
 
@@ -130,6 +130,19 @@ button:focus{
 .nav-item {
     margin: 2px;
 }
+
+.navbar-brand{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-brand img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
 	background: #729ed0;
 	color: #ffffff;
@@ -277,6 +290,7 @@ td {
 
 .heading-title{
 	margin-bottom: 50px;
+    margin-top: 50px;
 }
 .heading-title h2{
 	color: #010101;
@@ -298,6 +312,16 @@ td {
     border-radius: 20px;
     font-size: 40px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart2{
